@@ -1,0 +1,11 @@
+<h1>
+	<% if @name.blank? and @adjective.blank? %>
+		You are nothing!
+	<% elsif @name.blank?%>
+		You are <%= @adjective%>!
+	<% elsif @adjective.blank?%>
+		<%= @name %> is nothing!
+	<% else %>
+		<%= @name %> is a <%= @adjective%>! 
+	<% end %>
+</h1>
